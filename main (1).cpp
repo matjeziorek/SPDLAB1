@@ -27,7 +27,7 @@ class lista_zadan
 public:
     vector <zadanie> zadania;
     int liczba_zadan;
-    int *permutacje;
+    //int *permutacje;
     void C_max();
     void posortuj_poR();
     void printRPQ(int size);
@@ -67,11 +67,11 @@ bool lista_zadan::wczytaj_zadania()
         plik >> tmp_r >> tmp_p >> tmp_q;
         zadania.push_back(zadanie(tmp_r,tmp_p,tmp_q));
     }
-    permutacje = new int[liczba_zadan];
-    for(int i = 0; i < liczba_zadan; i++)
+    //permutacje = new int[liczba_zadan];
+    /*for(int i = 0; i < liczba_zadan; i++)
     {
         permutacje[i] = i+1;
-    }
+    }*/
     return true;
 }
 
